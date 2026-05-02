@@ -94,13 +94,19 @@ h1 {
   font-size: 16px;
 }
 
-.hobby-section h2 {
+.hobby-section h2,
+.food-section h2 {
   margin: 0 0 12px;
   font-size: 20px;
   letter-spacing: 0;
 }
 
-.hobby-list {
+.food-section {
+  margin-top: 24px;
+}
+
+.hobby-list,
+.food-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -109,7 +115,8 @@ h1 {
   list-style: none;
 }
 
-.hobby-list li {
+.hobby-list li,
+.food-list li {
   padding: 8px 16px;
   color: #e9fff8;
   font-weight: 700;
@@ -137,7 +144,8 @@ h1 {
     margin-inline: auto;
   }
 
-  .hobby-list {
+  .hobby-list,
+  .food-list {
     justify-content: center;
   }
 }
