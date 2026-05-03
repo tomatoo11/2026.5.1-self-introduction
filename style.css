@@ -25,6 +25,10 @@ body {
   line-height: 1.8;
 }
 
+img {
+  max-width: 100%;
+}
+
 .profile-page {
   min-height: 100vh;
   display: grid;
@@ -68,6 +72,12 @@ body {
 
 .profile-content {
   min-width: 0;
+}
+
+.profile-content,
+.intro,
+.sns-link {
+  overflow-wrap: anywhere;
 }
 
 .job {
@@ -143,18 +153,27 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  .profile-page {
+    display: block;
+    padding: 20px 14px;
+  }
+
   .profile-card {
     grid-template-columns: 1fr;
     gap: 28px;
-    padding: 28px;
+    padding: 28px 22px;
   }
 
   .photo-frame {
-    max-width: 240px;
+    max-width: 220px;
     margin: 0 auto;
   }
 
   .profile-content {
+    text-align: left;
+  }
+
+  h1 {
     text-align: center;
   }
 
@@ -164,6 +183,47 @@ h1 {
 
   .hobby-list,
   .food-list {
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .sns-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-page {
+    padding: 12px;
+  }
+
+  .profile-card {
+    gap: 22px;
+    padding: 22px 18px;
+  }
+
+  .photo-frame {
+    max-width: 180px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .intro {
+    margin: 20px 0 24px;
+    font-size: 15px;
+  }
+
+  .hobby-section h2,
+  .food-section h2,
+  .sns-section h2 {
+    font-size: 18px;
+  }
+
+  .hobby-list li,
+  .food-list li,
+  .sns-link {
+    font-size: 15px;
   }
 }
