@@ -95,13 +95,15 @@ h1 {
 }
 
 .hobby-section h2,
-.food-section h2 {
+.food-section h2,
+.sns-section h2 {
   margin: 0 0 12px;
   font-size: 20px;
   letter-spacing: 0;
 }
 
-.food-section {
+.food-section,
+.sns-section {
   margin-top: 24px;
 }
 
@@ -122,6 +124,22 @@ h1 {
   font-weight: 700;
   background: var(--mint);
   border-radius: 999px;
+}
+
+.sns-link {
+  display: inline-block;
+  padding: 10px 18px;
+  color: #fff5f5;
+  font-weight: 700;
+  text-decoration: none;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sns-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 @media (max-width: 720px) {
